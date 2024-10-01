@@ -1,0 +1,153 @@
+
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    float: left;
+    width: 10%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+}
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.sidebar button:hover {
+    background-color: #ddd;
+}
+.content {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+    width: 65%;
+    flex-grow: 1;
+    background-color: #fafafa;
+}
+.category-buttons {
+    
+    margin-bottom: 20px;
+    padding-left: 110px;
+}
+
+.category-buttons button {
+    width: 110px;
+    padding: 10px;
+    margin-right: 40px;
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.category-buttons button:hover {
+    background-color: darkorange;
+}
+.burger-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.burger-item {
+    width: 30%;
+    margin: 1%;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.burger-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.burger-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.burger-item button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.burger-item button:hover {
+    background-color: #555;
+}
+
+.cart-summary {
+    float: right;
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.cart-summary button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-summary button:hover {
+    background-color: #c0392b;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+}
+
+/* Hide sections by default */
+.section {
+    display: none;
+}
+.
