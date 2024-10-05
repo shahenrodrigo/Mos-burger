@@ -13,24 +13,26 @@
 </head>
 <body>
 
-<!-- Sidebar -->
 <div class="sidebar">
+    <h3>Mos Burger</h3>
     <br><br><br><br><br>
     <button id="customers-btn">Customers</button>
     <br>
     <button id="orders-btn">Orders</button>
     <br>
     <button id="stores-btn">Stores</button>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <button id="logout-btn"><a href="index.html" class="nav-link">Logout</a></button>
+    <br>
+    <button id="stores-btn">Reports</button>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <button id="logout-btn"><a href="index1.html" class="nav-link">Logout</a></button>
 </div>
 
-<!-- Cart Summary -->
 <div class="cart-summary">
     <h3>Selected Items</h3>
     <input type="text" placeholder="Enter Customer Name" id="customer-name">
     <input type="text" placeholder="Enter Customer Phone Number" id="customer-phone">
-    
+    <input type="text" placeholder="Enter Customer Address" id="customer-address">
+    <div id="cartItems"></div>
     <h4>Payment Summary</h4>
     <p>Subtotal: <span id="subtotal">0</span></p>
     <p>Discount: <span id="discount">0.00</span></p>
@@ -39,9 +41,7 @@
     <button id="place-order">Place Order</button>
 </div>
 
-<!-- Main Content -->
 <div class="content">
-    <!-- Burger Category and Items -->
     <div class="menu">
         <div class="category-buttons">
             <button class="b1">Burgers</button>
@@ -50,81 +50,26 @@
             <button class="b4">Pasta</button>
             <button class="b5">Beverages</button>
         </div>
-
-        <div class="burger-items">
-            <!-- Classic Burger (Regular) -->
-            <div class="burger-item">
-                <img src="image/bg1111.jpg" alt="Classic Burger (Regular)">
-                <p>Classic Burger (Regular) - 750 LKR</p>
-                <button class="decrease">-</button>
-                <span class="quantity">0</span>
-                <button class="increase">+</button>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="burger-item">
-                <img src="image/bg2222.jpg" alt="Classic Burger (Regular)">
-                <p>Classic Burger (Regular) - 750 LKR</p>
-                <button class="decrease">-</button>
-                <span class="quantity">0</span>
-                <button class="increase">+</button>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="burger-item">
-                <img src="image/bg4444.jpg" alt="Classic Burger (Regular)">
-                <p>Classic Burger (Regular) - 750 LKR</p>
-                <button class="decrease">-</button>
-                <span class="quantity">0</span>
-                <button class="increase">+</button>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="burger-item">
-                <img src="image/bg-03.jpg" alt="Classic Burger (Regular)">
-                <p>Classic Burger (Regular) - 750 LKR</p>
-                <button class="decrease">-</button>
-                <span class="quantity">0</span>
-                <button class="increase">+</button>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="burger-item">
-                <img src="image/bg-4.jpg" alt="Classic Burger (Regular)">
-                <p>Classic Burger (Regular) - 750 LKR</p>
-                <button class="decrease">-</button>
-                <span class="quantity">0</span>
-                <button class="increase">+</button>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="burger-item">
-                <img src="image/bg5.jpg" alt="Classic Burger (Regular)">
-                <p>Classic Burger (Regular) - 750 LKR</p>
-                <button class="decrease">-</button>
-                <span class="quantity">0</span>
-                <button class="increase">+</button>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-            <!-- More burger items -->
-            <!-- For demo purposes, duplicate the item -->
+        <div class="burger-items"></div>
         </div>
     </div>
-    <!-- Sections for Customers, Orders, Stores -->
+    
      <br><br><br><br><br><br>
     <div id="customer-section" class="section">
-        <h3 class="align-content-center text-center">Customer List</h3>
+        <h3 class="align-content-center text-center justify-content-center">Customer List</h3>
         <table id="customer-table">
             <thead>
                 <tr>
                     <th>Name</th>
                     <th>Phone</th>
+                    <th>Address</th>
                 </tr>
             </thead>
-            <tbody>
-                <!-- Customer data will appear here -->
-            </tbody>
         </table>
     </div>
 
     <div id="order-section" class="section">
-        <h3>Order List</h3>
+        <h3 class="align-content-center text-center justify-content-center">Order List</h3>
         <table id="order-table">
             <thead>
                 <tr>
@@ -133,15 +78,13 @@
                     <th>Total Payment</th>
                 </tr>
             </thead>
-            <tbody>
-                <!-- Order data will appear here -->
-            </tbody>
+           
         </table>
     </div>
     
     <div id="store-section" class="section">
         <h3>Store Info</h3>
-        <p>This section can display store-related information like locations or stock levels.</p>
+    
     </div>
 </div>
     

@@ -11,9 +11,9 @@ body {
 }
 .sidebar {
     float: left;
-    width: 10%;
+    width: 12%;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 15px;
     height: 100vh;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 
@@ -131,7 +131,9 @@ body {
 
 /* Table Styles */
 table {
-    width: 100%;
+    width: 65%;
+    margin-left: 200px;
+    margin-right: 200px;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -150,4 +152,3 @@ th, td {
 .section {
     display: none;
 }
-.
